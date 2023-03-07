@@ -1,22 +1,38 @@
 import { before, binding, given, then, when} from 'cucumber-tsflow';
 import { assert } from 'chai';
-import { Builder, WebDriver } from 'selenium-webdriver';
-import { setDefaultTimeout } from 'cucumber';
-
-let driver: WebDriver
 
 @binding()
 export class ebooklogin {
   
 
-  @given(/login to the website/)
-	public websiteLogin(searchValue: string): void {
-    ...
-    // The default step definition
-    ...
+  @given(/Given user navigates to the website ebook.com /)
+	public websiteLogin(username: string, password: string): void {
+		
+		// The step definition
+				
 	}
 
-  @when(/User Navigate to Login Page
-	And user logs in through Login Window by using <Username> with <Password>
-	Then login must be successful.
+	@when(/User Navigate to Login Page/)
+	public navigateLoginPage(): void {
+		...
+		// The step definition
+		...
+		}
+	
+	
+	@and(/user logs in through Login Window by using "([^"]*)" with "([^"]*)"/)
+	public loginValidation(user: string, pass: string): void {
+		...
+		// The step definition
+		...
+		}
+		
+	
+	@then(/login must be successful/)
+	public displaySuccess(author: string): void {
+		...
+		// The step definition
+		...
+		}
+		
 }
