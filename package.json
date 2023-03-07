@@ -1,0 +1,22 @@
+{
+  "name": "bicycle-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ".\\node_modules\\.bin\\cucumber-js -p default"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/cucumber": "^4.0.7",
+    "chai": "^4.3.7",
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.2",
+    "cucumber-tsflow": "^3.4.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.10"
+  }
+}
